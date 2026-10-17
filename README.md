@@ -1,58 +1,20 @@
-# 💸 Expense Tracker
+# Expense Tracker
 
-A responsive, cross-platform expense tracker app built with Flutter. Users can log daily expenses, organize them by category, and keep track of their spending with a clean Material Design interface.
+A Flutter app for recording expenses with an amount, date and category. You can add an expense, remove it and undo a removal.
 
-## 📸 Screenshots
+The layout changes between narrow and wide screens.
 
-> _Add screenshots here by dragging images into this README on GitHub_
+## Run locally
 
-## ✨ Features
-
-- Add and delete expense entries
-- Organize expenses by category
-- View expenses in a clean list layout
-- Responsive UI that works on both mobile and tablet
-- Material Design 3 components
-
-## 🛠️ Tech Stack
-
-- **Flutter** — cross-platform mobile framework
-- **Dart** — programming language
-- **setState** — built-in Flutter state management
-- **Material Design 3** — UI components
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Flutter SDK installed
-
-### Setup
-
-1. Clone the repo
-```bash
-   git clone https://github.com/dev-muhammetaly/expense_tracker.git
-   cd expense_tracker
+```sh
+flutter pub get
+flutter run
 ```
 
-2. Install dependencies
-```bash
-   flutter pub get
-```
+No backend setup is needed.
 
-3. Run the app
-```bash
-   flutter run
-```
+## Current state
 
-## 📦 Dependencies
+Expenses are stored in memory, with a few sample entries at startup. Changes are lost when the app restarts. The chart area is still a placeholder.
 
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-```
-
-## 👨‍💻 Author
-
-**Muhammetaly Annageldiyew**  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammetaly-annageldiyew-497608351)
+This project focuses on forms, date input, list updates and responsive layouts. The main screen is in `lib/expanse_tracker/widget/expense.dart`.
